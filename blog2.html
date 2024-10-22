@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Fondo de la imagen */
+        .img-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+            background-size: cover; /* Hace que la imagen cubra toda la página */
+            background-position: center; /* Centra la imagen */
+            z-index: -1; /* Envía la imagen al fondo */
+        }
+
+        /* Estilos del cuadro de texto */
+        .subt1 {
+            background-color: rgba(188, 218, 176, 0.8); /* Fondo semitransparente */
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px; /* Limita el ancho del cuadro */
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centra el cuadro */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cuadro de texto con pasos -->
+    <div class="subt1">
+        <h1>PASOS PARA NO CONTAMINAR EL AGUA</h1>
+        <p><b>
+                1. No arrojar basura ni desechos: Evita tirar plásticos, aceites, productos químicos o basura en cuerpos
+                de agua.
+                <br><br>
+                2. Reducir el uso de productos químicos: Usa productos de limpieza ecológicos y limita el uso de
+                pesticidas y fertilizantes.
+                <br><br>
+                3. Disponer correctamente de residuos peligrosos: Lleva aceites, pinturas, baterías y otros materiales
+                tóxicos a centros de reciclaje.
+                <br><br>
+                4. Ahorrar agua: Minimiza el desperdicio de agua en casa, cerrando grifos cuando no se usan y reparando
+                fugas.
+                <br><br>
+                5. No verter grasas en el desagüe: Las grasas y aceites deben desecharse en la basura, no en el
+                fregadero.
+                <br><br>
+                6. Participar en la reforestación: Plantar árboles y conservar áreas verdes ayuda a mantener los
+                ecosistemas acuáticos limpios.
+                <br><br>
+                7. Usar detergentes biodegradables: Elige productos que no contaminen ríos y lagos.
+            </b>
+        </p>
+    </div>
+
+    <!-- Imagen de fondo -->
+    <div class="img-fondo"></div>
+
+</body>
+
+</html>

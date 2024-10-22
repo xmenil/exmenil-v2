@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+    <style>
+        body {
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            /* Centra horizontalmente */
+            align-items: center;
+            /* Centra verticalmente */
+            width: 100%;
+            min-height: 100vh;
+            /* Para que el fondo cubra toda la pantalla */
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .titulo {
+            
+                position: absolute;
+                left: 4%;
+                top: 40%;
+                font-family: 'Arial', sans-serif; /* Familia de fuentes */
+                font-size: 30px; /* Tamaño grande */
+                background: linear-gradient(90deg, #e6f7f7, #0072ff); /* Degradado de azul */
+                -webkit-background-clip: text; /* Clip del fondo al texto */
+                -webkit-text-fill-color: transparent; /* Hace transparente el relleno del texto */
+                font-weight: bold;
+                text-transform: uppercase; 
+            
+            /* Centra el texto */
+        }
+
+        .subtitle {
+            text-align: center;
+            /* Centra el subtítulo */
+        }
+
+        .contenido {
+            position: absolute;
+            /* Permite centrar el cuadro */
+            top: 50%;
+            /* Coloca el cuadro en el centro verticalmente */
+            left: 65%;
+            /* Coloca el cuadro en el centro horizontalmente */
+            transform: translate(-50%, -50%);
+            /* Ajusta el centro del cuadro */
+            background-color: rgb(235, 213, 220);
+            /* Color café claro */
+            padding: 20px;
+            /* Espaciado interno */
+            border-radius: 10px;
+            /* Bordes redondeados */
+            width: 40%;
+            /* Ancho del cuadro */
+            font-weight: bold;
+            /* Texto en negrita */
+            z-index: 1;
+            /* Asegura que el cuadro esté encima de la imagen de fondo */
+        }
+
+        .imagen-izquierda {
+            position: absolute;
+            display: inherit;
+            width: 32%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: 0;
+
+        }
+
+        .imagen-fondo {
+            position: absolute;
+            width: 72%;
+            height: 100%;
+            top: 0%;
+            left: 30%;
+            z-index: 0;
+            /* Coloca la imagen de fondo detrás del texto */
+        } 
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img class="imagen-izquierda" src="imagsost.jfif" alt="Posición izquierda">
+    <div class="titulo">
+        <h1 style="font-family: Arial, sans-serif;">¡CUIDEMOS 
+            <br>
+            EL
+            <br>
+            AGUA!
+        </h1>
+
+
+    </div>
+   
+    <img class="imagen-fondo" src="aguafondo2.avif" alt="Fondo del listado de texto">
+    <div class="contenido">
+        <div class="subtitle">Los pasos para un mejor cuidado del agua</div>
+        <p>
+            1. Cierra el grifo mientras te cepillas los dientes.
+            <br>
+            2. Reparación de fugas de grifos y tuberías.
+            <br>
+            3. Utilice un balde para lavar el auto en lugar de la manguera.
+            <br>
+            4. Toma duchas más cortas.
+            <br>
+            5. Instale aireadores en grifos para reducir el flujo.
+            <br>
+            6. Recoge agua de lluvia para regar plantas.
+            <br>
+            7. Lava la ropa a carga completa en la lavadora.
+            <br>
+            8. Evite usar el inodoro como basurero.
+            <br>
+            9. Riega las plantas por la mañana o al atardecer.
+            <br>
+            10. Utilice un lavavajillas eficiente y lleno.
+        </p>
+    </div>
+    <iframe src="blog2.html" title="Contenido del Blog"></iframe>
+
+</body>
+
+</html>
